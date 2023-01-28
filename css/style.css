@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:ital,wght@0,400;0,700;1,400 & family= Raleway:wght@400;700 & family= Tangerina: wght@400;700 & display=swap');
 :root{
     --prymari-color:#102044;
     --secundary-color:#2e86eb;
@@ -7,6 +6,7 @@
     --black-color:#000;
     --titulo-fonte:'Raleway', sans-serif;
     --texto-fonte:'Open Sans', sans-serif;
+    --fonte-auxiliar:'Tangerine', cursiva;
 }
 
 /************--Seletores--************/
@@ -20,6 +20,16 @@ a{
     text-decoration: none;
 }
 
+p{
+    text-align: justify;
+    font-family: var(--texto-fonte);
+    font-weight: 490;
+}
+
+h2{
+    font-family: var(--titulo-fonte);
+    font-size: 60px;   
+}
 
 /************--Classes--************/
 .main-bg{
@@ -55,6 +65,7 @@ a{
     width: 100%;
     z-index: 1;
     background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
 }
 
 .menu-content{
@@ -97,14 +108,41 @@ a{
     color: #060608;
 }
 
-.intro-content img{
-    flex-grow: 1;
+.intro-text, .intro-img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
 }
-#home span{
-    font-weight:600;
-    margin-left: 35px; 
-    font-size: 80px;
-    font-family:var(--titulo-fonte);   
+
+.intro-text{
+    color: var(--white-color);
+    font-size: 20px;
+    font-family: var(--fonte-auxiliar);
+}
+
+.intro-btn{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#btn-linkdin, #btn-githurb{
+    width: 200px;
+    height: 25px;
+    background-color:var(--secundary-color);
+    border-radius: 5px;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.intro-img img{
+    max-width: 80%;   
+}
+
+.intro-text span{
+    font-weight:600; 
+    font-size: 50px; 
 }
 
 span::after {
@@ -124,33 +162,36 @@ span::after {
     }
   }
 
-#home img{
-    margin-top: 70px;
-    width:300px ;
-    justify-content: center;
-    align-items: center;
-}
-
-#sobre_mim{
-    margin: 70px 0;
+.sobre-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    border-top: 1px solid black;
-    padding: 10px;
-    background-image: linear-gradient(#102044, #2e86eb);
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.texto-sobre{
+    width: 50%;
+    text-align: justify;
+    font-family: var(--texto-fonte);
 }
 
-#sobre_mim img{
+.texto-sobre h2{
+    font-family: var(--fonte-auxiliar);
+    color: var(--prymari-color);
+}
+
+.img-sobre img{
     width: 300px;
     border-radius: 50%;
     margin-top: 50px;
 }
 
-h2{
-    font-family: Tangerine;
-    font-size: 60px;
-    margin: 20px;
+.projeto-content{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .texto{

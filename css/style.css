@@ -47,6 +47,7 @@ h2{
 
 .main-content{
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 10px;
 }
@@ -208,17 +209,38 @@ span::after {
     padding: 10px;
 }
 
-.cards_trabalhos{
+.card-conteiner{
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;   
+    padding: 20px;
+    gap: 10px;
+    background-color: #eFeFeF;
 }
 
 .cards{
+    border: 1px solid black;
+    width: 320px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--white-color);
+}
+
+.card-imagem .card-texto{
+    padding: 25px;
+    height: 150px;
+}
+
+
+.card-imagem img{
     border: 1px solid white;
-    width: 200px;
-    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-texto{
+    color: var(--black-color);
 }
 
 .formulario{

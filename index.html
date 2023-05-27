@@ -8,43 +8,42 @@
     <title>Meu portifólio</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <aside class="menu  ">
-        <div class="main-content menu-content">
-            <h1><a href="#home">Logo</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre-mim">sobre mim</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#contatos">Contatos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </aside>
-    <div class="spacing"></div>
-    <section class="main-bg section ">
-        <div id="home" class="main-content intro-content">
-                <div class="intro-text">
-                    <p>Olá sou <br/>
-                        <span> Isaque Prates</span>
-                        <br/>
-                        desenvolvedor web
-                        Seja bem vindo ao meu web site!
-                    </p>
-                    <div class="intro-btn">
-                        <input type="button" value="linkdin" name="btn-linkdin" id="btn-linkdin">
-                        <input type="button" value="githurb" name="btn-githurb" id="btn-githurb">
-                    </div>
+<body >
+    <header class="header">
+        <a href="#" class="logo">Portifólio</a>
+        <nav class="navBar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Service</a>
+            <a href="#portifolio">Portifólio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- section home -->
+    <section class="home" id="home">
+            <div class="home-content">
+                <h3>Olá, sou</h3>
+                <h1>Isaque Prates</h1>
+                <h3>E sou <span>Web Developer</span></h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, similique modi optio totam qui assumenda, quis veritatis deserunt culpa pariatur vel ut alias ea. Adipisci cumque rem numquam eveniet facere!</p>
+                
+                <div class="social-media">
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
                 </div>
+                <a href="#" class="btn">Download CV</a>
+            </div>   
            
-            <div class="intro-img">
-                <img src="imagens/developer_img.svg" alt="Homen sentado em frente ao notebook olhando para tela">
+            <div class="home-img">
+                <img src="imagens/avatarMe.png" alt="Um avatar que acredito parecer um pouco comigo">
             </div>
-        </div>
+        
     </section>
-    <section class="white-bg section" >
+
+    <!-- section about -->
+    <section class=" section" >
         <div id="sobre-mim" class="sobre-content main-content">
             <div class="texto-sobre">
                 <h2>Sobre mim</h2><br>
@@ -58,80 +57,35 @@
                 <img src="./imagens/isaque.jpg" alt="Isaque Prates">
             </div>
         </div>
+     
+        
     </section>
-    <section class="section main-bg">
+    <section class="section ">
         <div id="projetos" class="projeto-content main-content">
             <h2>Trabalhos</h2>
             <div class="card-conteiner">
-                <button class="arrow-left control" aria-label="Previous image">◀</button>
-        <button class="arrow-right control" aria-label="Next image">▶</button>
-                <div class="card-wrapper">
-                    <div class="card-galery">
-                        <div class="cards">
-                            <div class="card-imagem">
-                                <img src="imagens/img-E1.jpg" alt="projeto 1" class="">
-                            </div >
-                            <div class="card-texto">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero adipisci nesciunt impedit modi soluta saepe numquam facere officiis, mollitia
-                                    dignissimos odit est quibusdam consequuntur commodi optio aut quod, animi eligendi?</p>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card-imagem">
-                                <img src="imagens/img-E2.jpg" alt="projeto 1" class="">
-                            </div >
-                            <div class="card-texto">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero adipisci nesciunt impedit modi soluta saepe numquam facere officiis, mollitia
-                                    dignissimos odit est quibusdam consequuntur commodi optio aut quod, animi eligendi?</p>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card-imagem">
-                                <img src="imagens/img-E1.jpg" alt="projeto 1" class="">
-                            </div >
-                            <div class="card-texto">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero adipisci nesciunt impedit modi soluta saepe numquam facere officiis, mollitia
-                                    dignissimos odit est quibusdam consequuntur commodi optio aut quod, animi eligendi?</p>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card-imagem">
-                                <img src="imagens/img-E1.jpg" alt="projeto 1" class="">
-                            </div >
-                            <div class="card-texto">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero adipisci nesciunt impedit modi soluta saepe numquam facere officiis, mollitia
-                                    dignissimos odit est quibusdam consequuntur commodi optio aut quod, animi eligendi?</p>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card-imagem">
-                                <img src="imagens/img-E1.jpg" alt="projeto 1" class="">
-                            </div >
-                            <div class="card-texto">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero adipisci nesciunt impedit modi soluta saepe numquam facere officiis, mollitia
-                                    dignissimos odit est quibusdam consequuntur commodi optio aut quod, animi eligendi?</p>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card-imagem">
-                                <img src="imagens/img-E1.jpg" alt="projeto 1" class="">
-                            </div >
-                            <div class="card-texto">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero adipisci nesciunt impedit modi soluta saepe numquam facere officiis, mollitia
-                                    dignissimos odit est quibusdam consequuntur commodi optio aut quod, animi eligendi?</p>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <div class="card-imagem">
-                                <img src="imagens/img-E1.jpg" alt="projeto 1" class="">
-                            </div >
-                            <div class="card-texto">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero adipisci nesciunt impedit modi soluta saepe numquam facere officiis, mollitia
-                                    dignissimos odit est quibusdam consequuntur commodi optio aut quod, animi eligendi?</p>
-                            </div>
-                        </div>
-                        
+                <div class="card-galery">
+                    <div class="card-img">
+                        <img src="imagens/imagem2.jpg" alt="imagem teste">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam nam reiciendis,
+                                sapiente quia esse enim minus nisi nobis mollitia fugit iure commodi doloribus exercitationem ducimus. Nemo nam provident eos.</p>
                     </div>
+                    <div class="card-img">
+                        <img src="imagens/imagem2.jpg" alt="imagem teste">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam nam reiciendis,
+                                sapiente quia esse enim minus nisi nobis mollitia fugit iure commodi doloribus exercitationem ducimus. Nemo nam provident eos.</p>
+                    </div>
+                    <div class="card-img">
+                        <img src="imagens/imagem2.jpg" alt="imagem teste">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam nam reiciendis,
+                                sapiente quia esse enim minus nisi nobis mollitia fugit iure commodi doloribus exercitationem ducimus. Nemo nam provident eos.</p>
+                    </div>
+                    <div class="card-img">
+                        <img src="imagens/imagem2.jpg" alt="imagem teste">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam nam reiciendis,
+                                sapiente quia esse enim minus nisi nobis mollitia fugit iure commodi doloribus exercitationem ducimus. Nemo nam provident eos.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -159,9 +113,49 @@
             </tr>
             
         </table>
+
+        <a href="#">
+            <img src="imagens/linkedin.svg" alt="">
+        </a>
     </section>
 
     <script>
+        //carrossel
+        const controls = document.querySelectorAll('.control');
+        let currentItem = 0;
+        const items = document.querySelectorAll('.cards');
+        const maxItems = items.length;
+
+        controls.forEach(control => {
+            control.addEventListener('click',() =>{
+                const isleft = control.classList.contains('arrow-left')
+                
+                if(isleft){
+                    currentItem -=1;
+                }else{
+                    currentItem +=1;
+                }
+
+                if (currentItem >= maxItems) {
+                    currentItem = 0;
+                }
+
+                if (currentItem < 0) {
+                    currentItem = maxItems - 1;
+                }
+
+                items.forEach(item => item.classList.remove('current-item'));
+
+                items[currentItem].scrollIntoView({
+                    inline:"center",
+                    behavior:"smooth",
+                    block:"nearest"
+                });
+
+                items[currentItem].classList.add('current-item');
+            });
+        });
+
         function typeWriter(elemento) {
           const textoArray = elemento.innerText.split('');
           elemento.innerText = '';
@@ -179,10 +173,13 @@
         //   }
         // }
       
-        const titulo = document.querySelector('span');
+        const titulo = document.querySelector('h1');
         typeWriter(titulo);
         
       </script>
+    
 </body>
-<footer>pesquisar sobre roda pé</footer>
+<footer>pesquisar sobre roda pé
+    
+</footer>
 </html>

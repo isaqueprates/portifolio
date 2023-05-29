@@ -7,6 +7,7 @@
     <meta name="author" content="Isaque prates">
     <title>Meu portifólio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body >
     <header class="header">
@@ -29,95 +30,107 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, similique modi optio totam qui assumenda, quis veritatis deserunt culpa pariatur vel ut alias ea. Adipisci cumque rem numquam eveniet facere!</p>
                 
                 <div class="social-media">
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+                    <a href="#"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
+                    <a href="#"><i class='bx bxl-github bx-tada-hover'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt bx-tada-hover' ></i></a>
                 </div>
                 <a href="#" class="btn">Download CV</a>
             </div>   
            
             <div class="home-img">
                 <img src="imagens/avatarMe.png" alt="Um avatar que acredito parecer um pouco comigo">
-            </div>
-        
+            </div>      
     </section>
 
     <!-- section about -->
-    <section class=" section" >
-        <div id="sobre-mim" class="sobre-content main-content">
-            <div class="texto-sobre">
-                <h2>Sobre mim</h2><br>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis vitae illum corporis veniam quae alias aliquam,
-                    labore, ad corrupti aspernatur dicta molestias praesentium optio perferendis vel dignissimos excepturi ab rerum.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis vitae illum corporis veniam quae alias aliquam,
-                    labore, ad corrupti aspernatur dicta molestias praesentium optio perferendis vel dignissimos excepturi ab rerum.
-                </p>
-            </div>
-            <div class="img-sobre">
-                <img src="./imagens/isaque.jpg" alt="Isaque Prates">
-            </div>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./imagens/isaque.jpg" alt="">
         </div>
-     
-        
-    </section>
-    <section class="section ">
-        <div id="projetos" class="projeto-content main-content">
-            <h2>Trabalhos</h2>
-            <div class="card-conteiner">
-                <div class="card-galery">
-                    <div class="card-img">
-                        <img src="imagens/imagem2.jpg" alt="imagem teste">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam nam reiciendis,
-                                sapiente quia esse enim minus nisi nobis mollitia fugit iure commodi doloribus exercitationem ducimus. Nemo nam provident eos.</p>
-                    </div>
-                    <div class="card-img">
-                        <img src="imagens/imagem2.jpg" alt="imagem teste">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam nam reiciendis,
-                                sapiente quia esse enim minus nisi nobis mollitia fugit iure commodi doloribus exercitationem ducimus. Nemo nam provident eos.</p>
-                    </div>
-                    <div class="card-img">
-                        <img src="imagens/imagem2.jpg" alt="imagem teste">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam nam reiciendis,
-                                sapiente quia esse enim minus nisi nobis mollitia fugit iure commodi doloribus exercitationem ducimus. Nemo nam provident eos.</p>
-                    </div>
-                    <div class="card-img">
-                        <img src="imagens/imagem2.jpg" alt="imagem teste">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam nam reiciendis,
-                                sapiente quia esse enim minus nisi nobis mollitia fugit iure commodi doloribus exercitationem ducimus. Nemo nam provident eos.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="trabalhos" >
-        <h2>Contatos</h2>
-        <table class="formulario" >
-            <tr> 
-                <td>Nome:</td> 
-                <td><input type="text" placeholder="Nome"></td>
-            </tr>
-            <tr>
-                <td>Assunto:</td>
-                <td><input type="text" name="a" id="a" placeholder="Assunto" ></td>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td><input type="email" name="b" id="b" placeholder="Email"></td>
-            </tr>
-            <tr>
-                <td>Telefone:</td>
-                <td><input type="tel" name="c" id="c" placeholder="Telefone"></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Enviar" id="enviar"></td>
-            </tr>
-            
-        </table>
 
-        <a href="#">
-            <img src="imagens/linkedin.svg" alt="">
-        </a>
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>Web Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis autem, dignissimos adipisci quas quis obcaecati aliquid alias voluptates minus quibusdam cum laboriosam exercitationem quisquam rerum. Dolorum architecto fugit voluptate quidem.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
     </section>
+     
+   <!-- sectio portifolio designer -->
+   <section class="portifolio" id="portifolio">
+    <h2 class="heading">Latest<span>Project</span></h2>
+
+    <div class="portifolio-container">
+        <div class="portifolio-box">
+            <img src="./imagens/coming-soon.jpg" alt="">
+            <div class="portifolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam necessitatibus saepe culpa obcaecati. Sed at, sit, nemo reiciendis nesciunt fugiat excepturi voluptatibus beatae minima alias autem repellat? Nemo, nobis facere!</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portifolio-box">
+            <img src="./imagens/coming-soon.jpg" alt="">
+            <div class="portifolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam necessitatibus saepe culpa obcaecati. Sed at, sit, nemo reiciendis nesciunt fugiat excepturi voluptatibus beatae minima alias autem repellat? Nemo, nobis facere!</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portifolio-box">
+            <img src="./imagens/coming-soon.jpg" alt="">
+            <div class="portifolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam necessitatibus saepe culpa obcaecati. Sed at, sit, nemo reiciendis nesciunt fugiat excepturi voluptatibus beatae minima alias autem repellat? Nemo, nobis facere!</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portifolio-box">
+            <img src="./imagens/coming-soon.jpg" alt="">
+            <div class="portifolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam necessitatibus saepe culpa obcaecati. Sed at, sit, nemo reiciendis nesciunt fugiat excepturi voluptatibus beatae minima alias autem repellat? Nemo, nobis facere!</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portifolio-box">
+            <img src="./imagens/coming-soon.jpg" alt="">
+            <div class="portifolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam necessitatibus saepe culpa obcaecati. Sed at, sit, nemo reiciendis nesciunt fugiat excepturi voluptatibus beatae minima alias autem repellat? Nemo, nobis facere!</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+      <!-- contact section design -->
+      <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="You Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer desegn -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Isaque prates</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-chevrons-up'></i></a>
+        </div>
+    </footer>
 
     <script>
         //carrossel

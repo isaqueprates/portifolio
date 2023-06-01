@@ -425,30 +425,33 @@ section {
 
   @media (max-width:800px) {
 
-      .navBar {
-        visibility: hidden;
-      }
+  .header {
+    padding: 2rem ;
+  }  
+  .navBar {
+    visibility: hidden;
+  }
 
-     .active .navBar {
-      visibility: visible;
-      position: absolute;
-      height: 15rem;
-      top: 6rem;
-      right: .1rem;
-      padding: 4rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      border: 1px solid;
-      transition: .5s ease;
-      overflow: hidden;
-    }
+  .active .navBar {
+    visibility: visible;
+    position: absolute;
+    height: 15rem;
+    top: 5rem;
+    right: .1rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid;
+    transition: .5s ease;
+    overflow: hidden;
+  }
 
-    .active .navBar a {
-      font-size: 2.4rem;
-    }
+  .active .navBar a {
+    font-size: 2.4rem;
+  }
 
-    #btn-mobile {
+  #btn-mobile {
       position: absolute;
       top: 0;
       right:0;
@@ -493,11 +496,12 @@ section {
     padding: 4rem;
     margin: 0;
     flex-direction: column;
-    position: relative;
   }
 
   .home-content {
     order: 2;
+    margin-top:3rem;
+    position: relative;
   }
 
   .home-img img {
@@ -508,25 +512,28 @@ section {
   .home-content p {
     font-size: 2.5rem;
     margin: 5rem 0;
+    overflow: hidden;
   }
 
-  .social-media {
-    position: absolute;
-
+  .social-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .social-media a {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     font-size: 3rem;
+    
   }
 
-  .home-content .btn {
-    position: absolute;
-    right: 0;
-    font-size: 2.1rem;
-    margin-right: 4rem;
-    bottom: 12rem;
+  .social-conteiner .btn {
+    height: 20%;
+    font-size: 2rem;
+    padding: 1rem;
+    border: 1px solid;
   }
 
   .about {
@@ -536,14 +543,14 @@ section {
 
   .about h2 {
     position: absolute;
-    top: 15rem;
+    top: 13rem;
     left: 37%;
     right: 30%;
   }
 
   .about h3 {
     position: absolute;
-    top: 24rem;
+    top: 20rem;
     left: 37%;
     right: 30%;
   }
@@ -553,7 +560,7 @@ section {
   }
 
   .about p {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
   .service-box {
@@ -564,4 +571,33 @@ section {
   .layer {
     padding: 1rem;
   }
+  }
+
+  @media (max-width:650px) {
+    .active .navBar {
+      height: 5rem;
+      top: 6rem;
+      right: .1rem;
+      padding: 4rem;
+    }
+
+    .active .navBar a {
+      font-size: 1.8rem;
+    }
+
+    .home-content p {
+      font-size: 2rem;
+      margin: 5rem 0;
+    }
+
+    .social-media a {
+      width: 4rem;
+      height: 4rem;
+      font-size: 2.5rem;
+    }
+
+    .home-content .btn {
+      font-size: 1.5rem;
+      bottom: 11rem;
+    }
   }

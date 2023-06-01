@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= Open+Sans:ital,wght@0,400;0,700;1,400 & family= Raleway:wght@400;700 & family= Tangerina: wght@400;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;1,200&family=Tangerine:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 *{
@@ -16,9 +16,11 @@
     --second-color:#323946;
     --text-color:#fff;
     --main-color: #0ef;
-    --titulo-fonte:'Raleway', sans-serif;
-    --texto-fonte:'Open Sans', sans-serif;
+    --fonte-titulo:'Raleway', sans-serif;
+    --fonte-texto:'Open Sans';
     --fonte-auxiliar:'Tangerine', cursiva;
+    --fone-secundary:'Poppins', cursiva;
+    --fonte-three: 'Inter', Sans-serif;
 }
 
 /************--Seletores--************/
@@ -30,6 +32,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    font-family: var(--fonte-three);
 }
 
 section {
@@ -41,7 +44,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -140,6 +143,10 @@ section {
  .btn:hover{
     box-shadow: none;
  }
+
+ #btn-mobile {
+  display: none;
+ }
  /* fim do home */
 
  /*about */
@@ -195,18 +202,17 @@ section {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 30rem;
-  height: 30rem;
+  width: 25rem;
+  height: 25rem;
   text-align: center;
   border-radius: 2rem;
-  /* border: 1px solid ; */
   background: var(--second-color);
   position: relative;
   overflow: hidden;
 }
 
 .services-container i {
-  font-size: 8.5rem;
+  font-size: 6.5rem;
   
 }
 
@@ -215,15 +221,46 @@ section {
 }
 
 .services-container h4 {
-  font-size: 2.3rem ;
+  font-family: var(--fonte-titulo);
+  font-size: 2.4rem ;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#0000001a , var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 1rem;
+  transform: translateY(100%);
+  transition: .5s ease;
+  visibility: hidden;
 }
 
 .layer a i {
-  font-size: 2.5rem;
-  margin-top: .8rem;
+  font-size: 3rem;
+  margin-top: .2rem;
   color: var(--text-color);
 }
 
+.layer p {
+  font-size: 1.7rem;
+  overflow: hidden;
+}
+
+.service-box:hover .layer {
+  transform: translateY(0);
+  visibility: visible;
+}
+/* fim services */
   /* portifolio */
   .portifolio {
     background: var(--second-color);
@@ -234,18 +271,22 @@ section {
   }
  
   .portifolio-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2.8rem;
   }
  
   .portifolio-box {
+    width: 55rem;
+    height: 35rem;
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    /* border: 1px solid; */
   }
  
   .portifolio-box img {
@@ -257,7 +298,7 @@ section {
     transform: scale(1.1);
   }
  
-  .portifolio-layer, .layer {
+  .portifolio-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -274,8 +315,7 @@ section {
     transition: .5s ease;
   }
  
-  .portifolio-box:hover .portifolio-layer, 
-  .service-box:hover .layer {
+  .portifolio-box:hover .portifolio-layer {
     transform: translateY(0);
   }
  
@@ -378,3 +418,150 @@ section {
     color: var(--second-color);
   }
   /*fim footer*/
+  /* medias querias */
+  @media (max-width:1300px) {
+    
+  }
+
+  @media (max-width:800px) {
+
+      .navBar {
+        visibility: hidden;
+      }
+
+     .active .navBar {
+      visibility: visible;
+      position: absolute;
+      height: 15rem;
+      top: 6rem;
+      right: .1rem;
+      padding: 4rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      border: 1px solid;
+      transition: .5s ease;
+      overflow: hidden;
+    }
+
+    .active .navBar a {
+      font-size: 2.4rem;
+    }
+
+    #btn-mobile {
+      position: absolute;
+      top: 0;
+      right:0;
+      margin: 1rem;
+      background-color: transparent;
+      display: block;  
+      border: none;
+      padding: .4rem;
+      color: var(--text-color);
+  }
+
+  #hamburguer {
+    display: block;
+    border-top: .4rem solid var(--text-color);
+    width: 4rem;
+    
+  }
+
+  #hamburguer::after, #hamburguer::before {
+    content:'';
+    display: block;
+    width: 4rem;
+    height: .5rem;
+    background-color:var(--text-color);/*Variavel que mudar a cor do elemento apartir do elemento pai*/
+    margin-top: .5rem;
+    transition: 0.3s;
+    position: relative;
+  }
+  .header.active #hamburguer {
+    border-top-color:transparent;
+  }
+  .header.active #hamburguer::after {
+    transform: rotate(135deg);
+  }
+  .header.active #hamburguer::before {
+    transform: rotate(-135deg);
+    top:1rem;
+  }
+
+  .home {
+    display: flex;
+    padding: 4rem;
+    margin: 0;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .home-content {
+    order: 2;
+  }
+
+  .home-img img {
+    width: 80vw;
+    height: 30vh ;
+  }
+
+  .home-content p {
+    font-size: 2.5rem;
+    margin: 5rem 0;
+  }
+
+  .social-media {
+    position: absolute;
+
+  }
+
+  .social-media a {
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+  }
+
+  .home-content .btn {
+    position: absolute;
+    right: 0;
+    font-size: 2.1rem;
+    margin-right: 4rem;
+    bottom: 12rem;
+  }
+
+  .about {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .about h2 {
+    position: absolute;
+    top: 15rem;
+    left: 37%;
+    right: 30%;
+  }
+
+  .about h3 {
+    position: absolute;
+    top: 24rem;
+    left: 37%;
+    right: 30%;
+  }
+
+  .about img {
+    width: 50vw;
+  }
+
+  .about p {
+    font-size: 2rem;
+  }
+
+  .service-box {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .layer {
+    padding: 1rem;
+  }
+  }

@@ -248,7 +248,7 @@ section {
 .layer a i {
   font-size: 3rem;
   margin-top: .2rem;
-  color: var(--text-color);
+  color: var(--bg-color);
 }
 
 .layer p {
@@ -264,6 +264,7 @@ section {
   /* portifolio */
   .portifolio {
     background: var(--second-color);
+    position: relative;
   }
  
   .portifolio h2 {
@@ -277,7 +278,7 @@ section {
     align-items: center;
     gap: 2.8rem;
   }
- 
+
   .portifolio-box {
     width: 55rem;
     height: 35rem;
@@ -286,7 +287,6 @@ section {
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
-    /* border: 1px solid; */
   }
  
   .portifolio-box img {
@@ -341,7 +341,9 @@ section {
   .portifolio-layer a i {
     font-size: 2rem;
     color: var(--second-color);
-  }/*fim seção portifolio*/
+  }
+  /*fim seção portifolio */
+
 
   /* inicio contac */
   .contact h2 {
@@ -426,7 +428,9 @@ section {
   @media (max-width:800px) {
 
   .header {
-    padding: 2rem ;
+    width: 90vw;
+    padding: 1rem ;
+    
   }  
   .navBar {
     visibility: hidden;
@@ -435,20 +439,24 @@ section {
   .active .navBar {
     visibility: visible;
     position: absolute;
-    height: 15rem;
+    height: 8rem;
+    width: 96vw;
     top: 5rem;
-    right: .1rem;
-    padding: 4rem;
+    right: 0;
+    left: 0;
+    padding: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     border: 1px solid;
     transition: .5s ease;
     overflow: hidden;
+    background: linear-gradient(#00000071, var(--second-color));
   }
 
   .active .navBar a {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
 
   #btn-mobile {
@@ -491,29 +499,23 @@ section {
     top:1rem;
   }
 
-  .home {
-    display: flex;
-    padding: 4rem;
-    margin: 0;
-    flex-direction: column;
-  }
-
-  .home-content {
-    order: 2;
-    margin-top:3rem;
-    position: relative;
-  }
-
   .home-img img {
-    width: 80vw;
-    height: 30vh ;
+    width: 35vw;
+  }
+
+  .home-content h3 {
+    font-size: 2rem;
+  }
+
+  .home-content h1 {
+    font-size: 4rem;
   }
 
   .home-content p {
-    font-size: 2.5rem;
-    margin: 5rem 0;
+    font-size: 1.7rem;
+    margin: 3rem 0;
     overflow: hidden;
-  }
+  } 
 
   .social-conteiner {
     display: flex;
@@ -523,81 +525,178 @@ section {
   }
 
   .social-media a {
-    width: 5rem;
-    height: 5rem;
-    font-size: 3rem;
-    
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem; 
   }
 
-  .social-conteiner .btn {
+  .btn {
     height: 20%;
-    font-size: 2rem;
+    font-size: 1.3rem;
     padding: 1rem;
-    border: 1px solid;
   }
 
-  .about {
-    position: relative;
-    flex-direction: column;
-  }
-
-  .about h2 {
-    position: absolute;
-    top: 13rem;
-    left: 37%;
-    right: 30%;
+  .heading {
+    font-size: 4rem;
   }
 
   .about h3 {
-    position: absolute;
-    top: 20rem;
-    left: 37%;
-    right: 30%;
+    font-size: 2rem;
   }
 
   .about img {
-    width: 50vw;
+    width: 40vw;
   }
 
   .about p {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
   }
 
   .service-box {
-    width: 13rem;
-    height: 13rem;
+    border: 1px solid;
+    width: .1rem;
+    height: 1rem;
   }
 
   .layer {
+     /*trabalhando em responsividade*/
     padding: 1rem;
+  }
+
+  .layer a i {
+    font-size: 1rem;
+    margin-top: .2rem;
+    color: var(--text-color);
+  }
+  
+  .layer p {
+    font-size: .5rem;
+    overflow: hidden;
+  }
+
+  .service-box h3, .service-box i {
+    font-size: 1rem;
   }
   }
 
-  @media (max-width:650px) {
+  @media (max-width:600px) {
+
     .active .navBar {
-      height: 5rem;
+      height: 10rem;
+      width: 96vw;
       top: 6rem;
       right: .1rem;
       padding: 4rem;
+      
     }
 
     .active .navBar a {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
+      margin: .7rem;
+    }
+
+    .home {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .home-img img {
+      width: 70vw;
     }
 
     .home-content p {
-      font-size: 2rem;
-      margin: 5rem 0;
+      font-size: 1.2rem;
+      margin: 3rem 0 0; 
     }
 
     .social-media a {
-      width: 4rem;
-      height: 4rem;
-      font-size: 2.5rem;
+      width: 2.8rem;
+      height: 2.8rem;
+      font-size: 2.3rem;
     }
 
-    .home-content .btn {
+    .btn {
+      font-size: 1rem;
+      bottom: 1rem;
+    }
+
+    .about {
+      position: relative;
+      flex-direction: column-reverse;
+    }
+  
+    .heading {
+      font-size: 3rem;
+    }
+  
+    .about h3 {
+      font-size: 2rem;
+    }
+  
+    .about img {
+      width: 75vw;
+    }
+  
+    .about p {
       font-size: 1.5rem;
-      bottom: 11rem;
+    }
+
+    .services-container .service-box {
+      width: 10rem;
+      height: 10rem;
+      border: 1px solid var(--main-color);
+    }
+
+    .services-container i {
+      font-size: 5.5rem;  
+    }
+
+    .layer i {
+      display: none;
+    }
+
+    .layer h4 {
+      font-size: 1.5rem;
+    }
+
+    .layer p {
+      width: 8rem;
+      font-size: 1rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin: 5px;
+    }
+
+    .layer a i {
+      display: block;
+      font-size: 1.5rem;
+      border-radius: 50%;
+    }
+
+    .portifolio-box {
+      width: 40rem;
+      height: 20rem;
+    }
+
+    .portifolio-layer h4 {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+    .portifolio-layer p {
+      height: 40%;
+      overflow: hidden;
+      font-size: 1.4rem;
+    }
+
+    .portifolio-layer a {
+      margin-top: 1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    .portifolio-layer a i {
+      font-size: 1.4rem;
     }
   }

@@ -104,6 +104,8 @@ section {
 
  .home-content p {
     font-size: 1.6rem;
+    text-indent: 2rem;
+    line-height: 2.5rem;
  }
 
  .social-media a {
@@ -177,13 +179,17 @@ section {
     font-size: 2.6rem;
   }
  
-  .about-content p {
+  .about-content .text {
+    height: 25rem;
+    text-indent: 2rem;
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    line-height: 2.5rem;
+    margin: 2.5rem;
+    overflow: hidden;
   }
   /*fim about*/
-  /* services */
   
+  /* services */  
  .services h2 {
   margin-bottom: 5rem;
 }
@@ -202,8 +208,8 @@ section {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   text-align: center;
   border-radius: 2rem;
   background: var(--second-color);
@@ -212,17 +218,16 @@ section {
 }
 
 .services-container i {
-  font-size: 6.5rem;
-  
+  font-size: 4.5rem; 
 }
 
 .services-container h3 {
-  font-size: 2.5rem ;
+  font-size: 2rem ;
 }
 
 .services-container h4 {
   font-family: var(--fonte-titulo);
-  font-size: 2.4rem ;
+  font-size: 2rem ;
   font-weight: 700;
   margin-bottom: .5rem;
 }
@@ -247,13 +252,14 @@ section {
 
 .layer a i {
   font-size: 3rem;
-  margin-top: .2rem;
+  margin-top: .5rem;
   color: var(--bg-color);
 }
 
 .layer p {
   font-size: 1.7rem;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .service-box:hover .layer {
@@ -343,7 +349,6 @@ section {
     color: var(--second-color);
   }
   /*fim seção portifolio */
-
 
   /* inicio contac */
   .contact h2 {
@@ -439,7 +444,7 @@ section {
     visibility: visible;
     position: absolute;
     height: 8rem;
-    width: 96vw;
+    width: 99vw;
     top: 5rem;
     right: 0;
     left: 0;
@@ -448,7 +453,7 @@ section {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
+    /* border: 1px solid; */
     transition: .5s ease;
     overflow: hidden;
     background: linear-gradient(#00000071, var(--second-color));
@@ -551,30 +556,37 @@ section {
     font-size: 1.5rem;
   }
 
-  .service-box {
+  .services-container .service-box {
     border: 1px solid;
-    width: .1rem;
-    height: 1rem;
+    width: 15rem;
+    height: 15rem;
   }
 
   .layer {
-     /*trabalhando em responsividade*/
     padding: 1rem;
   }
 
   .layer a i {
-    font-size: 1rem;
+    display: block;
+    font-size: 2.5rem;
     margin-top: .2rem;
     color: var(--text-color);
   }
   
   .layer p {
-    font-size: .5rem;
+    width: 20vw;
+    height: 15vh;
+    font-size: 1rem;
     overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .service-box h3, .service-box i {
-    font-size: 1rem;
+  .service-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .layer i {
+    display: none;
   }
   }
 

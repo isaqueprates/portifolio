@@ -1,0 +1,289 @@
+ /* medias querias */
+ @media (max-width:800px) {
+
+   .header {
+     padding: 1rem;
+   }
+
+   .navBar {
+     visibility: hidden;
+   }
+
+   .active .navBar {
+     visibility: visible;
+     position: absolute;
+     height: 8rem;
+     width: 99vw;
+     top: 5rem;
+     right: 0;
+     left: 0;
+     padding: 3rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     /* border: 1px solid; */
+     transition: .5s ease;
+     overflow: hidden;
+     background: linear-gradient(#00000071, var(--second-color));
+   }
+
+   .active .navBar a {
+     font-size: 1.8rem;
+   }
+
+   #btn-mobile {
+     position: absolute;
+     top: 0;
+     right: 0;
+     margin: 1rem;
+     background-color: transparent;
+     display: block;
+     border: none;
+     padding: .4rem;
+     color: var(--text-color);
+   }
+
+   #hamburguer {
+     display: block;
+     border-top: .4rem solid var(--text-color);
+     width: 4rem;
+   }
+
+   #hamburguer::after,
+   #hamburguer::before {
+     content: '';
+     display: block;
+     width: 4rem;
+     height: .5rem;
+     background-color: var(--text-color);
+     margin-top: .5rem;
+     transition: 0.3s;
+     position: relative;
+   }
+
+   .header.active #hamburguer {
+     border-top-color: transparent;
+   }
+
+   .header.active #hamburguer::after {
+     transform: rotate(135deg);
+   }
+
+   .header.active #hamburguer::before {
+     transform: rotate(-135deg);
+     top: 1rem;
+   }
+
+   .home-img img {
+     width: 35vw;
+   }
+
+   .home-content h3 {
+     font-size: 2rem;
+   }
+
+   .home-content h1 {
+     font-size: 4rem;
+   }
+
+   .home-content p {
+     font-size: 1.7rem;
+     margin: 3rem 0;
+     overflow: hidden;
+   }
+
+   .social-conteiner {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   .social-media a {
+     width: 3rem;
+     height: 3rem;
+     font-size: 2rem;
+   }
+
+   .btn {
+     height: 20%;
+     font-size: 1.3rem;
+     padding: 1rem;
+   }
+
+   .heading {
+     font-size: 4rem;
+   }
+
+   .about h3 {
+     font-size: 2rem;
+   }
+
+   .about img {
+     width: 40vw;
+   }
+
+   .about p {
+     font-size: 1.5rem;
+   }
+
+   .services-container .service-box {
+     border: 1px solid;
+     width: 15rem;
+     height: 15rem;
+   }
+
+   .layer {
+     padding: 1rem;
+   }
+
+   .layer a i {
+     display: block;
+     font-size: 2.5rem;
+     margin-top: .2rem;
+     color: var(--text-color);
+   }
+
+   .layer p {
+     width: 20vw;
+     height: 15vh;
+     font-size: 1rem;
+     overflow: hidden;
+     text-overflow: ellipsis;
+   }
+
+   .service-box h3 {
+     font-size: 1.5rem;
+   }
+
+   .layer i {
+     display: none;
+   }
+
+ }
+
+ /* **fim media 800** */
+
+ @media (max-width:600px) {
+
+   .active .navBar {
+     height: 10rem;
+     width: 96vw;
+     top: 6rem;
+     right: .1rem;
+     padding: 4rem;
+   }
+
+   .active .navBar a {
+     font-size: 1.2rem;
+     margin: .7rem;
+   }
+
+   .home {
+     display: flex;
+     flex-direction: column;
+   }
+
+   .home-img img {
+     width: 70vw;
+   }
+
+   .home-content p {
+     font-size: 1.2rem;
+     margin: 3rem 0 0;
+   }
+
+   .social-media a {
+     width: 2.8rem;
+     height: 2.8rem;
+     font-size: 2.3rem;
+   }
+
+   .btn {
+     font-size: 1rem;
+     bottom: 1rem;
+   }
+
+   .about {
+     position: relative;
+     flex-direction: column-reverse;
+   }
+
+   .heading {
+     font-size: 3rem;
+   }
+
+   .about h3 {
+     font-size: 2rem;
+   }
+
+   .about img {
+     width: 75vw;
+   }
+
+   .about p {
+     font-size: 1.5rem;
+   }
+
+   .services-container .service-box {
+     width: 10rem;
+     height: 10rem;
+     border: 1px solid var(--main-color);
+   }
+
+   .services-container i {
+     font-size: 5.5rem;
+   }
+
+   .layer i {
+     display: none;
+   }
+
+   .layer h4 {
+     font-size: 1.5rem;
+   }
+
+   .layer p {
+     width: 8rem;
+     font-size: 1rem;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     margin: 5px;
+   }
+
+   .layer a i {
+     display: block;
+     font-size: 1.5rem;
+     border-radius: 50%;
+   }
+
+   .portifolio-box {
+     width: 40rem;
+     height: 20rem;
+   }
+
+   .portifolio-layer h4 {
+     font-size: 2rem;
+     margin-top: 2rem;
+   }
+
+   .portifolio-layer p {
+     height: 40%;
+     overflow: hidden;
+     font-size: 1.4rem;
+   }
+
+   .portifolio-layer a {
+     margin-top: 1rem;
+     width: 2.5rem;
+     height: 2.5rem;
+   }
+
+   .portifolio-layer a i {
+     font-size: 1.4rem;
+   }
+ }
+
+ /* **fim media 600** */

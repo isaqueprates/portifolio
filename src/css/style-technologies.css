@@ -1,0 +1,79 @@
+
+ /* services */  
+ .services h2 {
+    margin-bottom: 5rem;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+  }
+  
+  .services-container .service-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    border-radius: 2rem;
+    background: var(--second-color);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .services-container i {
+    font-size: 4.5rem; 
+  }
+  
+  .services-container h3 {
+    font-size: 2rem ;
+  }
+  
+  .services-container h4 {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem ;
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+  
+  .layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#0000001a , var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    visibility: hidden;
+  }
+  
+  .layer a i {
+    font-size: 3rem;
+    margin-top: .5rem;
+    color: var(--bg-color);
+  }
+  
+  .layer p {
+    font-size: 1.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .service-box:hover .layer {
+    transform: translateY(0);
+    visibility: visible;
+  }
+  /* fim services */

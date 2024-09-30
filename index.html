@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Isaque prates">
     <title>Meu portifólio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./src/css/style-global.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -29,7 +29,7 @@
         <div class="home-content">
             <h3>Olá, sou</h3>
             <h1>Isaque Prates</h1>
-            <h3>E sou <span>Web Developer</span></h3>
+            <h3>E sou <span>desenvolvedor web</span></h3>
             <p> Bem-vindo ao meu website! Aqui, estou empolgado para compartilhar com você minhas habilidades e
                 demonstrar o que sou capaz de fazer. Este espaço é uma vitrine do meu trabalho e mostra o constante
                 esforço que dedico ao aprimoramento das minhas habilidades..</p>
@@ -40,19 +40,19 @@
                     <a href="https://github.com/isaqueprates" target="_blank"><i class='bx bxl-github bx-tada-hover'></i></a>
                     <a href="https://www.instagram.com/isaque_prates/" target="_blank"><i class='bx bxl-instagram-alt bx-tada-hover'></i></a>
                 </div>
-                <a href="documentos/Curriculo.pdf" class="btn" download>Download CV</a>
+                <a href="./src/documentos/Curriculo.pdf" class="btn" download>Download CV</a>
             </div>
         </div>
 
         <div class="home-img">
-            <img src="imagens/avatarMe.png" alt="Um avatar que acredito parecer um pouco comigo">
+            <img src="./src/imagens/avatarMe.png" alt="Um avatar que acredito parecer um pouco comigo">
         </div>
     </section>
 
     <!-- section about -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="./imagens/isaque.jpg" alt="">
+            <img src="./src/imagens/isaque.jpg" alt="imagem do autor do portifolio com uma camisa vermelha">
         </div>
 
         <div class="about-content">
@@ -98,7 +98,7 @@
         </div>
     </section>
 
-    <!-- Meus serviços -->
+    <!-- My technologies -->
     <section class="services" id="service">
         <h2 class="heading">Minhas<span>Habilidades</span></h2>
 
@@ -147,38 +147,16 @@
                 </div>
             </div>
 
-            <!-- <div class="service-box"> aprofundando conhecimento
-                <i class='bx bxl-flutter'></i>
-                <h3>Flutter</h3>
-                <div class="layer">
-                    <i class='bx bxl-flutter'></i>
-                    <h4>Flutter</h4>
-                    <p>Flutter é um kit de desenvolvimento de interface de usuário, de código aberto, criado pela empresa Google em 2015, baseado na linguagem de programação Dart, que possibilita a criação de aplicativos compilados nativamente, para os sistemas operacionais Android, iOS, Windows, Mac, Linux e, Fuchsia e Web.</p>
-                    <a href="https://flutter.dev/?gclid=CjwKCAjwp6CkBhB_EiwAlQVyxYH5OEkCXVnW8lTl3reRXzMAfAEKEskZtUbcDMecGZx2jchXHQad1RoCRz4QAvD_BwE&gclsrc=aw.ds" target="_blank"><i class='bx bx-right-top-arrow-circle'></i></a>
-                </div>
-            </div> -->
-
-            <!-- <div class="service-box"> aprofundando conhecimento
-                <i class='bx bxl-php '></i>
-                <h3>php</h3>
-                <div class="layer">
-                    <i class='bx bxl-php'></i>
-                    <h4>php</h4>
-                    <p>PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web.</p>
-                    <a href="https://www.php.net" target="_blank"><i class='bx bx-right-top-arrow-circle'></i></a>
-                </div>
-            </div> -->
-
-            <!-- <div class="service-box"> aprofundando conhecimento
+            <div class="service-box">
                 <i class='bx bxl-react'></i>
                 <h3>react</h3>
                 <div class="layer">
                     <i class='bx bxl-react'></i>
                     <h4>react</h4>
-                    <p>LO React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.</p>
+                    <p>React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.</p>
                     <a href="https://react.dev" target="_blank"><i class='bx bx-right-top-arrow-circle'></i></a>
                 </div>
-            </div> -->
+            </div>
 
             <div class="service-box">
                 <i class='bx bxl-firebase'></i>
@@ -198,9 +176,10 @@
         <h2 class="heading">Meus<span>projetos</span></h2>
 
         <div class="portifolio-container">
+
             <div class="portifolio-box">
 
-                <img src="./imagens/chaleh.png" alt="">
+                <img src="./src/imagens/chaleh.png" alt="">
                 <div class="portifolio-layer">
                     <h4>Chalé Hotel</h4>
                     <p>Este projeto de site fictício para um hotel com o tema "Chalé" permitiu aprimorar minhas habilidades em desenvolvimento web, com ênfase em design e responsividade. O foco foi criar uma experiência visualmente atraente e otimizada para diversos dispositivos.
@@ -209,8 +188,9 @@
                 </div>
 
             </div>
+
             <div class="portifolio-box">
-                <img src="./imagens/tecblog-1.png" alt="">
+                <img src="./src/imagens/tecblog-1.png" alt="">
                 <div class="portifolio-layer">
                     <h4>Tecblog</h4>
                     <p>Este blog de notícias com foco em tecnologia foi desenvolvido utilizando conhecimentos em JavaScript, HTML e CSS que venho estudando. O projeto serviu para aplicar e consolidar habilidades de desenvolvimento web, criando um site funcional
@@ -220,7 +200,7 @@
             </div>
 
             <div class="portifolio-box">
-                <img src="./imagens/noticiaC.png" alt="">
+                <img src="./src/imagens/noticiaC.png" alt="">
                 <div class="portifolio-layer">
                     <h4>Noticias da Cidade</h4>
                     <p>Este projeto de site fictício de notícias da cidade foi criado para aprofundar meu conhecimento em HTML, CSS e JavaScript. O objetivo foi construir uma aplicação dinâmica e visualmente atraente, aprimorando minhas habilidades em desenvolvimento front-end.
@@ -230,7 +210,7 @@
             </div>
 
             <div class="portifolio-box">
-                <img src="./imagens/pokedex.png" alt="">
+                <img src="./src/imagens/pokedex.png" alt="">
                 <div class="portifolio-layer">
                     <h4>PokeDex</h4>
                     <p>Neste projeto de site de Pokémon, refinei minhas habilidades em consumo de APIs e responsividade, utilizando Node.js, JavaScript, HTML e CSS. Desenvolvi uma aplicação interativa e responsiva, melhorando a experiência do usuário em diversos dispositivos.
@@ -240,15 +220,14 @@
             </div>
 
             <div class="portifolio-box">
-                <img src="./imagens/coming-soon.jpg" alt="">
+                <img src="./src/imagens/coming-soon.jpg" alt="imagem com fundo preto com um nome em inglês coming-soon">
                 <div class="portifolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam necessitatibus saepe culpa
-                        obcaecati. Sed at, sit, nemo reiciendis nesciunt fugiat excepturi voluptatibus beatae minima
-                        alias autem repellat? Nemo, nobis facere!</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h4>Em breve</h4>
+                    <p>Novos projetos estão sendo desenvolvidos. Estou aprimorando minhas habilidades em desenvolvimento web.</p>
+                    <a href="https://github.com/isaqueprates"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
+
         </div>
         </div>
     </section>
@@ -257,17 +236,22 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+        <div class="contact-container">
+            
+            <div class="cont-contact"><a href="https://www.linkedin.com/in/isaque-prates-87475b1b0?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdDr94KgHQZOplrJB0vU4pQ%3D%3D" target="_blank"><i class='bx bxl-linkedin bx-tada-hover'></i></a>Linkedin
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="You Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
+
+            <div class="cont-contact"><a href="https://github.com/isaqueprates" target="_blank"><i class='bx bxl-github bx-tada-hover'></i></a>Github
+            </div>
+
+            <div class="cont-contact"><a href="https://www.instagram.com/isaque_prates/" target="_blank"><i class='bx bxl-instagram-alt bx-tada-hover'></i></a>Instagram
+            </div>
+            
+        </div>
+        
     </section>
 
-    <!-- footer desegn -->
+    <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2023 by Isaque prates</p>
@@ -279,7 +263,7 @@
     </footer>
 
     <!-- javaScript -->
-    <script src="js/sript.js"></script>
+    <script src="./src/js/sript.js"></script>
 </body>
 
 </html>

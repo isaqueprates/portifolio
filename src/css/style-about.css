@@ -1,0 +1,38 @@
+
+ /*about */
+ .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background: var(--second-color);
+  }
+
+  .about-img img {
+    width: 25vw;
+    border-radius: 50%;
+  }  
+
+  .heading {
+    text-align: center;
+    font-size: 4.5rem;
+  }
+ 
+  .about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+  }
+ 
+  .about-content h3 {
+    font-size: 2.6rem;
+  }
+ 
+  .about-content .text {
+    height: 25rem;
+    text-indent: 2rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin: 2.5rem;
+    overflow: hidden;
+  }
+  /*fim about*/

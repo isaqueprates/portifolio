@@ -1,0 +1,13 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "description": "<img src=\"imagens/homePortifolio.png\"/>\r ´Acesse meu site clicando ´ [Aqui](https://portifolio-nine-liard.vercel.app/?).",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "prebuild": "npm install"
+  },
+  "keywords": [],
+  "author": "Isaque prates",
+  "license": "ISC"
+}

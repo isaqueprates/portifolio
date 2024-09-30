@@ -1,0 +1,51 @@
+@import url("/src/css/style-menu.css");
+@import url("/src/css/style-home.css");
+@import url("/src/css/style-about.css");
+@import url("/src/css/style-technologies.css");
+@import url("/src/css/style-jobs.css");
+@import url("/src/css/style-contact.css");
+@import url("/src/css/style-footer.css");
+@import url("/src/css/style-media-query.css");
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;1,200&family=Tangerine:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+    outline: 0;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color:#1f242d;
+    --second-color:#323946;
+    --text-color:#fff;
+    --main-color: #0ef;
+    --fonte-titulo:'Raleway', sans-serif;
+    --fonte-texto:'Open Sans';
+    --fonte-auxiliar:'Tangerine', cursiva;
+    --fone-secundary:'Poppins', cursiva;
+    --fonte-three: 'Inter', Sans-serif;
+}
+
+/************--Seletores globais--************/
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--fonte-three);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}

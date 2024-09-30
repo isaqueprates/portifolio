@@ -1,0 +1,29 @@
+
+ /* inicio contac */
+ .contact-container{
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+ }
+
+ .cont-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+ }
+
+ .cont-contact a{
+  color: var(--main-color);
+  padding: 2px;
+  font-size: 7rem;
+  border: 1px solid;
+  border-radius: 50%;
+ }
+  /*fim contact*/

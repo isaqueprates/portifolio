@@ -7,11 +7,6 @@ typeWriter(title);
 
 btnMenu.addEventListener('click', toggleMenu);
 
-document.addEventListener('DOMContentLoaded', () => {
-    pegarForm();
-});
-
-
 function toggleMenu(){
     const nav = document.querySelector('.header');
     nav.classList.toggle('active');
@@ -25,31 +20,6 @@ function typeWriter(element) {
     }
 }
 
-function pegarForm() {
-    const nome = document.querySelector('#name');
-    const email = document.querySelector('#email');
-    const mensagem = document.querySelector('#message');
-    const bt = document.querySelector('#submit');
-    const form = document.querySelector('#contact-form');
-
-    bt.addEventListener('click', (event) => {
-        event.preventDefault();
-        const data = {
-            nome: nome.value,
-            email: email.value,
-            mensagem: mensagem.value
-        };
-
-        enviarEmail(data);
-        form.reset();
-    });
-}
-
-async function enviarEmail(dados) {
-    console.log(dados);
-
-}
-
 // function typeWriter(elemento) {
 //   let textoArray = elemento.innerText.split('');
 //   elemento.innerText = '';
@@ -58,3 +28,13 @@ async function enviarEmail(dados) {
 //   });
   
 // }
+
+const btnHeading = document.querySelector('#btn-heading');
+
+btnHeading.addEventListener('click', () => {
+    const heading = document.querySelector('.about-content');
+    const headingActive = document.querySelector('.about');
+    heading.classList.toggle('active');
+    headingActive.classList.toggle('active');
+    btnHeading.innerHTML = btnHeading.innerHTML === 'Ler mais' ? 'Ler menos' : 'Ler mais';
+});

@@ -20,15 +20,6 @@ function typeWriter(element) {
     }
 }
 
-// function typeWriter(elemento) {
-//   let textoArray = elemento.innerText.split('');
-//   elemento.innerText = '';
-//   textoArray.forEach((letra, i) => {
-//     setTimeout(() => elemento.innerText += letra, 150 * i);
-//   });
-  
-// }
-
 const btnHeading = document.querySelector('#btn-heading');
 
 btnHeading.addEventListener('click', () => {
